@@ -55,7 +55,6 @@ def classifier(X, Y, X_test, Y_test, opt):
     Y_pred = LR.predict(X_test)
     y_probas = LR.predict_proba(X_test)
     print type(y_probas)
-    # print metrics.classification_report(devY, Y_pred)
     skplt.metrics.plot_precision_recall_curve(Y_test, y_probas, curves=['each_class'])
     plt.show()
     skplt.metrics.plot_precision_recall_curve(Y_test, y_probas, curves=['micro'])

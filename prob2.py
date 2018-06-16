@@ -13,7 +13,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn import metrics
 from sklearn.utils import shuffle
 
-
+# Semeval Dataset, Stanford Dataset
 def parseDataset(feature):
 
     print "Parsing training data"
